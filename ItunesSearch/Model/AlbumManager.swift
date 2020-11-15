@@ -55,7 +55,11 @@ struct AlbumManager {
         do {
             let decodedData = try decoder.decode(AlbumData.self, from: placeData)
             var albumModels:[AlbumViewModel]?
-            albumModels = decodedData.results.map({return AlbumViewModel(result: $0)})
+            albumModels = decodedData.results.map(
+                {
+                    
+                    return AlbumViewModel(result: $0)
+                })
             return albumModels
         } catch {
             print(error)
@@ -85,7 +89,8 @@ struct AlbumManager {
         case .success( _): break
             
         case .failure(let error):
-            fatalError("Failed to create book: \(error)")
+//            fatalError("Failed to create book: \(error)")
+            delegate?.didFailWithError(error: error)
         }
     }
     
@@ -102,13 +107,18 @@ struct AlbumManager {
             lastAccessedAlbum.longDescription =  albumViewModel.longDescription
             lastAccessedAlbum.date = Date()
         case .failure(let error):
-            fatalError("Failed to create book: \(error)")
+            delegate?.didFailWithError(error: error)
         }
         do{
             try self.context.save()
         }catch {
             delegate?.didFailWithError(error: error)
         }
+    }
+    
+    func saveAlbum(albumViewModel:AlbumViewModel){
+    let repository = CoreDataRepository<Albums>(managedObjectContext: context)
+        
     }
 }
 

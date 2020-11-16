@@ -17,10 +17,10 @@ class ItunesSearchTests: XCTestCase {
         result.artworkUrl100 = ""
         result.trackPrice = 100.0
         let albumViewModel = AlbumViewModel(result: result)
-        XCTAssertEqual("Metallica", albumViewModel.trackName)
+        XCTAssertEqual("The Godfather", albumViewModel.trackName)
     }
     
-    func testEmptyTitle(){
+    func testEmptyTitleResults(){
         let result = Results()
         result.trackName = ""
         result.primaryGenreName  = "Action"
@@ -30,7 +30,7 @@ class ItunesSearchTests: XCTestCase {
         XCTAssertEqual("Unknown", albumViewModel.trackName)
     }
     
-    func testEmptyIcon(){
+    func testEmptyIconResults(){
         let result = Results()
         result.trackName = "The Godfather"
         result.primaryGenreName  = "Action"

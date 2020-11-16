@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gab-Fn-nbb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gab-Fn-nbb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -131,21 +131,32 @@
                                     <constraint firstItem="G7D-uF-4AW" firstAttribute="leading" secondItem="cYb-F4-7Z0" secondAttribute="leading" constant="8" id="wlF-YJ-pfp"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="UAi-EL-UVa">
+                                <rect key="frame" x="197" y="487" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ROC-UD-20R"/>
+                                    <constraint firstAttribute="height" constant="20" id="uhP-if-G7j"/>
+                                </constraints>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mcy-xQ-uth"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="mcy-xQ-uth" firstAttribute="trailing" secondItem="wPC-uf-OT8" secondAttribute="trailing" id="7gX-6E-Gtw"/>
                             <constraint firstItem="cYb-F4-7Z0" firstAttribute="leading" secondItem="mcy-xQ-uth" secondAttribute="leading" id="CxH-It-uhM"/>
+                            <constraint firstItem="UAi-EL-UVa" firstAttribute="centerX" secondItem="wPC-uf-OT8" secondAttribute="centerX" id="DHA-Hm-LNQ"/>
                             <constraint firstItem="mcy-xQ-uth" firstAttribute="bottom" secondItem="wPC-uf-OT8" secondAttribute="bottom" id="F3J-fb-lbS"/>
                             <constraint firstItem="cYb-F4-7Z0" firstAttribute="top" secondItem="mcy-xQ-uth" secondAttribute="top" id="TCz-ad-G7w"/>
                             <constraint firstItem="mcy-xQ-uth" firstAttribute="trailing" secondItem="cYb-F4-7Z0" secondAttribute="trailing" id="VdN-ys-lXp"/>
+                            <constraint firstItem="UAi-EL-UVa" firstAttribute="centerY" secondItem="wPC-uf-OT8" secondAttribute="centerY" id="hYd-Ng-PHa"/>
                             <constraint firstItem="wPC-uf-OT8" firstAttribute="top" secondItem="cYb-F4-7Z0" secondAttribute="bottom" id="hsX-SX-jiZ"/>
                             <constraint firstItem="wPC-uf-OT8" firstAttribute="leading" secondItem="mcy-xQ-uth" secondAttribute="leading" id="nhs-Us-Fv6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ax2-dx-HW7"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="UAi-EL-UVa" id="GmH-JG-Nmx"/>
                         <outlet property="searchTextField" destination="G7D-uF-4AW" id="fxJ-F1-Eim"/>
                         <outlet property="tableView" destination="wPC-uf-OT8" id="tEa-G6-ENg"/>
                         <segue destination="Au3-Vl-Mrv" kind="showDetail" identifier="showDetails" id="4Mb-qt-mUV"/>
@@ -166,8 +177,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="O4t-9k-ld4">
                                 <rect key="frame" x="16" y="108" width="382" height="738"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AcE-5x-sLQ">
-                                        <rect key="frame" x="121" y="0.0" width="140" height="160"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="AcE-5x-sLQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="160"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="zBM-ke-NeL"/>
                                         </constraints>
@@ -272,6 +283,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="4Mb-qt-mUV"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
         <image name="noimage" width="600" height="600"/>

@@ -38,6 +38,7 @@ class HomeViewController: UIViewController  {
     }
 
     @IBAction func searchPressed(_ sender: UIButton) {
+        activityIndicator.startAnimating()
         refreshControl.beginRefreshing()
         searchTextField.endEditing(true)
     }
@@ -123,13 +124,17 @@ extension HomeViewController:AlbumManagerDelegate{
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
+                self.activityIndicator.stopAnimating()
             }
         }
     }
     
     func didFailWithError(error: Error) {
-        print(error.localizedDescription)
-        self.presentAlert(message: error.localizedDescription)
+        DispatchQueue.main.async {
+            self.presentAlert(message: error.localizedDescription)
+            self.refreshControl.endRefreshing()
+            self.activityIndicator.stopAnimating()
+        }
     }
 }
 

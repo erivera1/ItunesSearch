@@ -6,7 +6,7 @@ target 'ItunesSearch' do
   use_frameworks!
 
   # Pods for ItunesSearch
-  pod 'Kingfisher', '~> 5.0'
+  pod 'Kingfisher' #, '~> 5.0'
   target 'ItunesSearchTests' do
     inherit! :search_paths
     # Pods for testing

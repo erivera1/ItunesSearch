@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
         albumManager.delegate = self
         if let albumView = albumViewModel{
             // DELETE THE LAST ITEM IN CORE DATA
-            albumManager.deleteLastAccessedData()
+            albumManager.deleteData(entity: Constants.entityLastAccessedAlbum)
             //INSERT NEW ONE.
             albumManager.saveLastAccessedData(albumViewModel: albumView)
             configureView(albumView: albumView)
@@ -59,7 +59,8 @@ extension DetailViewController:AlbumManagerDelegate{
     }
     
     func didFailWithError(error: Error) {
-        print(error.localizedDescription)
-        self.presentAlert(message: error.localizedDescription)
+        DispatchQueue.main.async {
+            self.presentAlert(message: error.localizedDescription)
+        }
     }
 }

@@ -60,6 +60,8 @@
 		B6349B7E5F3ED208A6CD1E6B /* Pods-ItunesSearch-ItunesSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearch-ItunesSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-ItunesSearch-ItunesSearchUITests/Pods-ItunesSearch-ItunesSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD3A5B98953FCE50C6E591C5 /* Pods_ItunesSearch_ItunesSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesSearch_ItunesSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F728F761210F4FE59A4FB7 /* Pods-ItunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.release.xcconfig"; path = "Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		FC4A41262560D36600544287 /* Records+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC4A41272560D36600544287 /* Records+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FCA3EE67255E25AA00EDF65A /* ItunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA3EE6A255E25AA00EDF65A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA3EE6C255E25AA00EDF65A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +242,8 @@
 		FCA3EEFC255E634B00EDF65A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FC4A41262560D36600544287 /* Records+CoreDataClass.swift */,
+				FC4A41272560D36600544287 /* Records+CoreDataProperties.swift */,
 				FCA3EF45255E6E1400EDF65A /* LastAccessedAlbum+CoreDataClass.swift */,
 				FCA3EF46255E6E1400EDF65A /* LastAccessedAlbum+CoreDataProperties.swift */,
 				FCA3EEFD255E636400EDF65A /* CoreDataManager.swift */,

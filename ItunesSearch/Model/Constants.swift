@@ -7,7 +7,7 @@
 
 struct Constants {
     static let baseURL = "https://itunes.apple.com/search?"
-    static let entityNameAlbum = "Album"
+    static let entityNameRecords = "Records"
     static let entityLastAccessedAlbum = "LastAccessedAlbum"
     static let iconString = "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon"
     static let unknownString = "Unknown"

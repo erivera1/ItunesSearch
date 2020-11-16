@@ -25,11 +25,6 @@ class AlbumCell:UITableViewCell{
         albumImage.kf.cancelDownloadTask()
     }
     
-//    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
-//        super.setHighlighted(highlighted, animated: animated)
-//        self.backgroundColor = isHighlighted ? .highlightColor : .yellow
-//    }
-    
     func setUpCells(albumViewModel:AlbumViewModel){
         let url = URL(string: albumViewModel.artworkUrl100)!
         let image = UIImage(named: Constants.unknownString)
@@ -38,7 +33,6 @@ class AlbumCell:UITableViewCell{
         lblTrackName?.text = albumViewModel.trackName 
         lblGenre?.text =  albumViewModel.primaryGenreName
         lblPrice?.text =  "Price: \(albumViewModel.trackPrice)"
-        self.backgroundColor = .highlightColor//isHighlighted ? .highlightColor : .white
+        self.backgroundColor = .highlightColor
     }
-
 }

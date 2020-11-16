@@ -15,4 +15,3 @@ extension UIColor {
         return UIColor(red: r/255, green: g/255, blue: b/255, alpha: alpha)
     }
 }
-//Color.fromRGBO(236, 31, 38, .035),

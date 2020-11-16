@@ -15,6 +15,8 @@ struct AlbumViewModel {
     let longDescription: String
     let date:Date?
     
+    
+    //init for Results
     init(result:Results?) {
         self.trackPrice = result?.trackPrice ?? 0.0
         var trackName = result?.trackName ?? ""
@@ -34,6 +36,7 @@ struct AlbumViewModel {
         self.date = Date()
     }
     
+    //init for LastAccessedAlbum CoreData Entity
     init(album:LastAccessedAlbum?) {
         self.trackPrice = album?.trackPrice ?? 0.0
         var trackName = album?.trackName ?? ""
@@ -51,6 +54,7 @@ struct AlbumViewModel {
         self.date = album?.date
     }
     
+    //init for Records CoreData Entity
     init(record:Records?) {
         self.trackPrice = record?.trackPrice ?? 0.0
         var trackName = record?.trackName ?? ""

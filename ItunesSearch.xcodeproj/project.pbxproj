@@ -24,13 +24,11 @@
 		FCA3EEB9255E260E00EDF65A /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEB8255E260E00EDF65A /* AlbumCell.swift */; };
 		FCA3EEC0255E266900EDF65A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEBE255E266900EDF65A /* DetailViewController.swift */; };
 		FCA3EEC1255E266900EDF65A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEBF255E266900EDF65A /* HomeViewController.swift */; };
-		FCA3EECA255E26A300EDF65A /* ItunesSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEC8255E26A200EDF65A /* ItunesSearch.xcdatamodeld */; };
 		FCA3EEF2255E2C3000EDF65A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEF0255E2C3000EDF65A /* DateExtension.swift */; };
 		FCA3EEF3255E2C3000EDF65A /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEF1255E2C3000EDF65A /* ViewControllerExtension.swift */; };
 		FCA3EEF8255E5E8A00EDF65A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEF7255E5E8A00EDF65A /* ColorExtension.swift */; };
 		FCA3EEFE255E636400EDF65A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EEFD255E636400EDF65A /* CoreDataManager.swift */; };
-		FCA3EF49255E6E1400EDF65A /* LastAccessedAlbum+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EF45255E6E1400EDF65A /* LastAccessedAlbum+CoreDataClass.swift */; };
-		FCA3EF4A255E6E1400EDF65A /* LastAccessedAlbum+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA3EF46255E6E1400EDF65A /* LastAccessedAlbum+CoreDataProperties.swift */; };
+		FCB5313C256CD26800210EF5 /* ItunesSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCB5313A256CD26800210EF5 /* ItunesSearch.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +58,6 @@
 		B6349B7E5F3ED208A6CD1E6B /* Pods-ItunesSearch-ItunesSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearch-ItunesSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-ItunesSearch-ItunesSearchUITests/Pods-ItunesSearch-ItunesSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD3A5B98953FCE50C6E591C5 /* Pods_ItunesSearch_ItunesSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ItunesSearch_ItunesSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F728F761210F4FE59A4FB7 /* Pods-ItunesSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ItunesSearchTests.release.xcconfig"; path = "Target Support Files/Pods-ItunesSearchTests/Pods-ItunesSearchTests.release.xcconfig"; sourceTree = "<group>"; };
-		FC4A41262560D36600544287 /* Records+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FC4A41272560D36600544287 /* Records+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FCA3EE67255E25AA00EDF65A /* ItunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA3EE6A255E25AA00EDF65A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCA3EE6C255E25AA00EDF65A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,13 +78,15 @@
 		FCA3EEB8255E260E00EDF65A /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		FCA3EEBE255E266900EDF65A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FCA3EEBF255E266900EDF65A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FCA3EEC9255E26A200EDF65A /* ItunesSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ItunesSearch.xcdatamodel; sourceTree = "<group>"; };
 		FCA3EEF0255E2C3000EDF65A /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		FCA3EEF1255E2C3000EDF65A /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		FCA3EEF7255E5E8A00EDF65A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		FCA3EEFD255E636400EDF65A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		FCA3EF45255E6E1400EDF65A /* LastAccessedAlbum+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastAccessedAlbum+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FCA3EF46255E6E1400EDF65A /* LastAccessedAlbum+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastAccessedAlbum+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FCB5313B256CD26800210EF5 /* ItunesSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ItunesSearch.xcdatamodel; sourceTree = "<group>"; };
+		FCB53146256CD38F00210EF5 /* LastAccessedAlbum+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastAccessedAlbum+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FCB53147256CD38F00210EF5 /* LastAccessedAlbum+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LastAccessedAlbum+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FCB53148256CD38F00210EF5 /* Records+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FCB53149256CD38F00210EF5 /* Records+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +175,7 @@
 				FCA3EE76255E25AD00EDF65A /* Assets.xcassets */,
 				FCA3EE78255E25AD00EDF65A /* LaunchScreen.storyboard */,
 				FCA3EE7B255E25AD00EDF65A /* Info.plist */,
-				FCA3EEC8255E26A200EDF65A /* ItunesSearch.xcdatamodeld */,
+				FCB5313A256CD26800210EF5 /* ItunesSearch.xcdatamodeld */,
 			);
 			path = ItunesSearch;
 			sourceTree = "<group>";
@@ -242,10 +240,10 @@
 		FCA3EEFC255E634B00EDF65A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				FC4A41262560D36600544287 /* Records+CoreDataClass.swift */,
-				FC4A41272560D36600544287 /* Records+CoreDataProperties.swift */,
-				FCA3EF45255E6E1400EDF65A /* LastAccessedAlbum+CoreDataClass.swift */,
-				FCA3EF46255E6E1400EDF65A /* LastAccessedAlbum+CoreDataProperties.swift */,
+				FCB53146256CD38F00210EF5 /* LastAccessedAlbum+CoreDataClass.swift */,
+				FCB53147256CD38F00210EF5 /* LastAccessedAlbum+CoreDataProperties.swift */,
+				FCB53148256CD38F00210EF5 /* Records+CoreDataClass.swift */,
+				FCB53149256CD38F00210EF5 /* Records+CoreDataProperties.swift */,
 				FCA3EEFD255E636400EDF65A /* CoreDataManager.swift */,
 			);
 			path = CoreData;
@@ -492,19 +490,17 @@
 				FCA3EE6B255E25AA00EDF65A /* AppDelegate.swift in Sources */,
 				FCA3EE6D255E25AA00EDF65A /* SceneDelegate.swift in Sources */,
 				FCA3EEF3255E2C3000EDF65A /* ViewControllerExtension.swift in Sources */,
-				FCA3EECA255E26A300EDF65A /* ItunesSearch.xcdatamodeld in Sources */,
 				FCA3EEAD255E25F900EDF65A /* AlbumViewModel.swift in Sources */,
 				FCA3EEAF255E25F900EDF65A /* AlbumData.swift in Sources */,
 				FCA3EEF2255E2C3000EDF65A /* DateExtension.swift in Sources */,
 				FCA3EEAE255E25F900EDF65A /* AlbumManager.swift in Sources */,
 				FCA3EEF8255E5E8A00EDF65A /* ColorExtension.swift in Sources */,
 				FCA3EEC1255E266900EDF65A /* HomeViewController.swift in Sources */,
-				FCA3EF4A255E6E1400EDF65A /* LastAccessedAlbum+CoreDataProperties.swift in Sources */,
-				FCA3EF49255E6E1400EDF65A /* LastAccessedAlbum+CoreDataClass.swift in Sources */,
 				FCA3EEC0255E266900EDF65A /* DetailViewController.swift in Sources */,
 				FCA3EEB4255E260600EDF65A /* Constants.swift in Sources */,
 				FCA3EEFE255E636400EDF65A /* CoreDataManager.swift in Sources */,
 				FCA3EEB9255E260E00EDF65A /* AlbumCell.swift in Sources */,
+				FCB5313C256CD26800210EF5 /* ItunesSearch.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,14 +833,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FCA3EEC8255E26A200EDF65A /* ItunesSearch.xcdatamodeld */ = {
+		FCB5313A256CD26800210EF5 /* ItunesSearch.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FCA3EEC9255E26A200EDF65A /* ItunesSearch.xcdatamodel */,
+				FCB5313B256CD26800210EF5 /* ItunesSearch.xcdatamodel */,
 			);
-			currentVersion = FCA3EEC9255E26A200EDF65A /* ItunesSearch.xcdatamodel */;
-			name = ItunesSearch.xcdatamodeld;
-			path = ../../../../.Trash/ItunesSearch.xcdatamodeld;
+			currentVersion = FCB5313B256CD26800210EF5 /* ItunesSearch.xcdatamodel */;
+			path = ItunesSearch.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

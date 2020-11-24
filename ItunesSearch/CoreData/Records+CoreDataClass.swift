@@ -2,7 +2,7 @@
 //  Records+CoreDataClass.swift
 //  ItunesSearch
 //
-//  Created by Eliric on 11/15/20.
+//  Created by Eliric on 11/24/20.
 //
 //
 

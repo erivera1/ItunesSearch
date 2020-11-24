@@ -2,7 +2,7 @@
 //  LastAccessedAlbum+CoreDataProperties.swift
 //  ItunesSearch
 //
-//  Created by Eliric on 11/13/20.
+//  Created by Eliric on 11/24/20.
 //
 //
 
